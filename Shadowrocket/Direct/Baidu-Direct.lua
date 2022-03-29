@@ -46,6 +46,7 @@ function wa_lua_on_handshake_cb(ctx)
         local port = ctx_address_port(ctx)
         local res = 'CONNECT ' .. host .. ':' .. port .. ' HTTP/1.1\r\n' ..
                     'Host: ' .. host .. ':' .. port .. '\r\n' ..
+                    'User-Agent: okhttp/4.9.0 Dalvik/2.1.0 baiduboxapp/11.0.5.12 (Baidu; P1 11)\r\n'..
                     'Proxy-Connection: Keep-Alive\r\n'..
                     'X-T5-Auth: YTY0Nzlk\r\n\r\n'
         ctx_write(ctx, res)
