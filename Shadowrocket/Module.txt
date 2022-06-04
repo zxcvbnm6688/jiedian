@@ -1,5 +1,6 @@
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/Block/YouTubeAds.sgmodule
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Surge/AllInOne/AllInOne.sgmodule
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Shadowrocket/Redirect/Redirect.sgmodule
 https://raw.githubusercontent.com/mymoonyue/Surge/master/JS.sgmodule
 https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/TestFlightDownload.sgmodule
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/Block/AdvertisingPlus.sgmodule
