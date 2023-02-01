@@ -1,4 +1,7 @@
 https://raw.githubusercontent.com/chengkongyiban/shadowrocket/main/Block/LoonGalleryforShadowrocket.module
+
+https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/YoutubeAds.confqx
+
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Shadowrocket/Advertising/Advertising.sgmodule
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Shadowrocket/AdvertisingScript/AdvertisingScript.sgmodule
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Shadowrocket/SafeRedirect/SafeRedirect.sgmodule
