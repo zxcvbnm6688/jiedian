@@ -5,7 +5,7 @@ https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/WeChat.confq
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Amap.confqx
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Weibo.confqx
 https://raw.githubusercontent.com/zZPiglet/Task/master/UnblockURLinWeChat.confqx
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/Block/Advertising.sgmodule
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zheye/zheye.sgmodule
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/StartUp.confqx
 https://raw.githubusercontent.com/ddgksf2013/dev/master/ForOwnUse.confqx
 https://raw.githubusercontent.com/deezertidal/shadowrocket-rules/main/modules/doc.module
