@@ -1,8 +1,4 @@
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/Block/YouTubeAds.sgmodule
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Shadowrocket/Advertising/Advertising.sgmodule
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Shadowrocket/AdvertisingScript/AdvertisingScript.sgmodule
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Shadowrocket/Redirect/Redirect.sgmodule
-https://raw.githubusercontent.com/mymoonyue/Surge/master/JS.sgmodule
-https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/TestFlightDownload.sgmodule
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/Block/AdvertisingPlus.sgmodule
-https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/Dualsub.sgmodule
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Shadowrocket/SafeRedirect/SafeRedirect.sgmodule
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Shadowrocket/Upgrade/Upgrade.sgmodule
