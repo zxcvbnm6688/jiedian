@@ -1,3 +1,4 @@
 HOST-SUFFIX,ume1.umetrip.com,AD
 HOST-SUFFIX,ocsp.apple.com,AD
 HOST-SUFFIX,amdc.m.taobao.com,AD
+ip-cidr,203.107.1.1/24,AD
