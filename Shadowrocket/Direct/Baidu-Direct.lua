@@ -44,11 +44,12 @@ function wa_lua_on_handshake_cb(ctx)
     if flags[uuid] ~= kHttpHeaderSent then
         local host = ctx_address_host(ctx)
         local port = ctx_address_port(ctx)
-        local res = 'CONNECT ' .. host .. ':' .. port .. ' HTTP/1.1\r\n' ..
-                    'Host: ' .. host .. ':' .. port .. '\r\n' ..
-                    'User-Agent: okhttp/4.9.0 Dalvik/2.1.0 baiduboxapp/11.0.5.12 (Baidu; P1 11)\r\n'..
+        local res = 'CONNECT ' .. host .. ':' .. port .. '@152.3.236.22:443 HTTP/1.1\r\n' ..
+                    'Host: '153.3.236.22:443\r\n' ..
                     'Proxy-Connection: Keep-Alive\r\n'..
-                    'X-T5-Auth: YTY0Nzlk\r\n\r\n'
+                    'X-T5-Auth: YTY0Nzlk\r\n'..
+                    
+                    'User-Agent: baiduboxapp\r\n\r\n'
         ctx_write(ctx, res)
         flags[uuid] = kHttpHeaderSent
     end
@@ -67,14 +68,33 @@ function wa_lua_on_read_cb(ctx, buf)
 end
 
 function wa_lua_on_write_cb(ctx, buf)
-    ctx_debug('wa_lua_on_write_cb')
+    local host = ctx_address_host(ctx)
+    local port = ctx_address_port(ctx)
+    
+    if ( is_http_request(buf) == 1 ) then
+            local index = find(buf, '/')
+            local method = sub(buf, 0, index - 1)
+            local rest = sub(buf, index)
+            local s, e = find(rest, '\r\n')
+            
+            local less = sub(rest, e + 1)
+            local s1, e1 = find(less, '\r\n')
+
+            buf = method .. sub(rest, 0, e) .. 
+            --'X-Online-Host:\t\t ' .. host ..'\r\n' ..
+            '\tHost: 153.3.236.22:443\r\n'..
+            'X-T5-Auth: 683556433\r\n' ..
+            sub(rest, e + 1)
+            
+    end
+    
     return DIRECT, buf
 end
 
 function wa_lua_on_close_cb(ctx)
-    ctx_debug('wa_lua_on_close_cb')
     local uuid = ctx_uuid(ctx)
     flags[uuid] = nil
     ctx_free(ctx)
     return SUCCESS
+endSS
 end
