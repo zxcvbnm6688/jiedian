@@ -1,0 +1,7 @@
+[MITM]
+hostname = www.skyjos.com
+
+[Script]
+# Owlfiles
+# hostname = www.skyjos.com
+Owlfiles = type=http-response,pattern=^https?:\/\/www\.skyjos\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js
