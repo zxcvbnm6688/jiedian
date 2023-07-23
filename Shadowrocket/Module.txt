@@ -1,4 +1,5 @@
 https://raw.githubusercontent.com/chengkongyiban/shadowrocket/main/Block/LoonGalleryforShadowrocket.module
+https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Shadowrocket/Rewrite/Unlock.sgmodule
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Bilibili.confqx
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Applet.confqx
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/WeChat.confqx
