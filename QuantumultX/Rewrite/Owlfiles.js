@@ -5,7 +5,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/www\.skyjos\.com url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js
+^https:\/\/www\.skyjos\.com url script-response-body https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Owlfiles.js
 
 [mitm]
 hostname = www.skyjos.com
