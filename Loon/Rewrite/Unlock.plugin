@@ -9,6 +9,3 @@ http-response ^https?:\/\/www\.skyjos\.com script-path=https://raw.githubusercon
 # 微信小程序去广告
 # hostname = *tshort.weixin.qq.com
 http-response ^http?:\/\/.*tshort\.weixin\.qq\.com\/mmtls\/\w+ script-path=https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/applet.js, requires-body=true, tag=applet
-
-
-
