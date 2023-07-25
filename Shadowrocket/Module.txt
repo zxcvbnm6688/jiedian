@@ -7,7 +7,6 @@ https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Amap.confqx
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Weibo.confqx
 https://raw.githubusercontent.com/zZPiglet/Task/master/UnblockURLinWeChat.confqx
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zheye/zheye.sgmodule
-https://raw.githubusercontent.com/Yu9191/Rewrite/main/PDFexpert.jsqx
 https://raw.githubusercontent.com/chxm1023/Script_X/main/Collections.sgmodule
 https://raw.githubusercontent.com/ddgksf2013/dev/master/ForOwnUse.confqx
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/StartUp.confqx
