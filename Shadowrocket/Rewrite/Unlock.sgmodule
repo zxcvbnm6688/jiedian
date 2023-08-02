@@ -1,7 +1,7 @@
 #!name=Unlock
 
 [MITM]
-hostname = www.skyjos.com,*tshort.weixin.qq.com,api.owhealth.com
+hostname = www.skyjos.com,*tshort.weixin.qq.com
 
 [Script]
 # Owlfiles解锁VIP
