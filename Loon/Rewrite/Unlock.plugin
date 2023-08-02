@@ -12,4 +12,4 @@ http-response ^http?:\/\/.*tshort\.weixin\.qq\.com\/mmtls\/\w+ script-path=https
 
 # flo解锁VIP
 # hostname = api.owhealth.com
-^https:\/\/api\.owhealth\.com\/subscriptions\/v1\/apple script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flo.js, requires-body=true, tag=flo解锁VIP
+http-response ^https:\/\/api\.owhealth\.com\/subscriptions\/v1\/apple script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flo.js, requires-body=true, tag=flo解锁VIP
