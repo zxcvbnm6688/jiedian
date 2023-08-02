@@ -2,4 +2,4 @@ DOMAIN-SUFFIX,ume1.umetrip.com
 DOMAIN,ocsp.apple.com
 DOMAIN,amdc.m.taobao.com
 DOMAIN,ntb.lanjie100.com
-IP-CIDR,203.107.1.1/24
+IP-CIDR,203.107.1.1/24,no-resolve
