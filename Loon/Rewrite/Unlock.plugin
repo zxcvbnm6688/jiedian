@@ -1,5 +1,5 @@
 [MITM]
-hostname = www.skyjos.com,*tshort.weixin.qq.com
+hostname = www.skyjos.com,*tshort.weixin.qq.com,api.owhealth.com
 
 [Script]
 # Owlfiles解锁VIP
@@ -9,3 +9,7 @@ http-response ^https?:\/\/www\.skyjos\.com script-path=https://raw.githubusercon
 # 微信小程序去广告
 # hostname = *tshort.weixin.qq.com
 http-response ^http?:\/\/.*tshort\.weixin\.qq\.com\/mmtls\/\w+ script-path=https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/applet.js, requires-body=true, tag=微信小程序去广告
+
+# flo解锁VIP
+# hostname = api.owhealth.com
+^https:\/\/api\.owhealth\.com\/subscriptions\/v1\/apple script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Flo.js, requires-body=true, tag=flo解锁VIP
