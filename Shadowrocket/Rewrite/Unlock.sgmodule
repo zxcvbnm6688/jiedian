@@ -1,7 +1,7 @@
 #!name=Unlock
 
 [MITM]
-hostname = www.skyjos.com,*tshort.weixin.qq.com
+hostname = www.skyjos.com
 
 [Script]
 # Owlfiles解锁VIP
@@ -10,4 +10,4 @@ Owlfiles解锁VIP = type=http-response,pattern=^https?:\/\/www\.skyjos\.com,requ
 
 # 微信小程序去广告
 # hostname = *tshort.weixin.qq.com
-微信小程序去广告 = type=http-response,pattern=^http?:\/\/.*tshort\.weixin\.qq\.com\/mmtls\/\w+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/applet.js
+# 微信小程序去广告 = type=http-response,pattern=^http?:\/\/.*tshort\.weixin\.qq\.com\/mmtls\/\w+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/applet.js
