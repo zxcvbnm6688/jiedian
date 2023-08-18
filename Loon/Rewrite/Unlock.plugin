@@ -1,14 +1,10 @@
 [MITM]
-hostname = www.skyjos.com, *account.wps.cn, *account.wps.com
+hostname = www.skyjos.com
 
 [Script]
 # Owlfiles解锁VIP
 # hostname = www.skyjos.com
 http-response ^https?:\/\/www\.skyjos\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js, requires-body=true, tag=Owlfiles解锁VIP
-
-# WPS国际会员
-# hostname = *account.wps.cn, *account.wps.com
-http-response ^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js, requires-body=true, tag=WPS国际会员
 
 # 微信小程序去广告
 # hostname = *tshort.weixin.qq.com
