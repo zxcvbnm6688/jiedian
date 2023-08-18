@@ -6,6 +6,7 @@ QuantumultX:
 
 [rewrite_local]
 ^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users url script-response-body https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/wps.js
+
 [mitm]
 hostname = *account.wps.cn, *account.wps.com
 
