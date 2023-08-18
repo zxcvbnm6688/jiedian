@@ -1,5 +1,5 @@
 [MITM]
-hostname = www.skyjos.com, *account.wps.com
+hostname = www.skyjos.com, *account.wps.cn, *account.wps.com
 
 [Script]
 # Owlfiles解锁VIP
@@ -7,8 +7,8 @@ hostname = www.skyjos.com, *account.wps.com
 http-response ^https?:\/\/www\.skyjos\.com script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtywj.js, requires-body=true, tag=Owlfiles解锁VIP
 
 # WPS国际会员
-# hostname = *account.wps.com
-http-response ^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/wps.js, requires-body=true, tag=WPS国际会员
+# hostname = *account.wps.cn, *account.wps.com
+http-response ^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/wps.js
 
 # 微信小程序去广告
 # hostname = *tshort.weixin.qq.com
