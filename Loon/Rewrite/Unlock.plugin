@@ -8,7 +8,7 @@ http-response ^https?:\/\/www\.skyjos\.com script-path=https://raw.githubusercon
 
 # WPS国际会员
 # hostname = *account.wps.cn, *account.wps.com
-http-response ^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/wps.js, requires-body=true, tag=WPS国际会员
+http-response ^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js, requires-body=true, tag=WPS国际会员
 
 # 微信小程序去广告
 # hostname = *tshort.weixin.qq.com
