@@ -5,19 +5,19 @@ WPS Office 解锁部分功能
 QuantumultX:
 
 [rewrite_local]
-^https?:\/\/[a-z-]*account\.wps\.com(:\d+|)\/api\/users url script-response-body https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/wps.js
+^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
 [mitm]
-hostname = *account.wps.com
+hostname = *account.wps.cn, *account.wps.com
 
 ***************************
 Surge4 or Loon:
 
 [Script]
-http-response ^https?:\/\/[a-z-]*account\.wps\.com(:\d+|)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/wps.js
+http-response ^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
 [MITM]
-hostname = *account.wps.com
+hostname = *account.wps.cn, *account.wps.com
 
 **************************/
 
