@@ -1,7 +1,0 @@
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@3.114.127.57:443?encryption=none&security=tls&sni=1.worker.com&type=ws&host=1.worker.com&path=%2F%3Fed%3D2048#Cloudflare JP1
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@167.88.182.2:443?encryption=none&security=tls&sni=1.worker.com&type=ws&host=1.worker.com&path=%2F%3Fed%3D2048#Cloudflare JP2
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@13.114.220.23:443?encryption=none&security=tls&sni=1.worker.com&type=ws&host=1.worker.com&path=%2F%3Fed%3D2048#Cloudflare JP3
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@139.180.207.113:443?encryption=none&security=tls&sni=1.worker.com&type=ws&host=1.worker.com&path=%2F%3Fed%3D2048#Cloudflare JP4
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@54.179.145.33:443?encryption=none&security=tls&sni=1.worker.com&type=ws&host=1.worker.com&path=%2F%3Fed%3D2048#Cloudflare SG1
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@13.250.131.37:443?encryption=none&security=tls&sni=1.worker.com&type=ws&host=1.worker.com&path=%2F%3Fed%3D2048#Cloudflare SG2
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@52.78.64.68:443?encryption=none&security=tls&sni=1.worker.com&type=ws&host=1.worker.com&path=%2F%3Fed%3D2048#Cloudflare KR1
