@@ -19,7 +19,7 @@ hostname = *.wps.cn
 var chxm1023 = JSON.parse($response.body);
 const vip1 = '/list_purchase_info';
 const vip2 = '/overview';
-const vip3 = '/check';
+const vip3 = '/691517744?t=';
 const flkj = '/spaces';
 
 if ($request.url.indexOf(vip1) != -1){
