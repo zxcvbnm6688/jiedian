@@ -17,7 +17,7 @@ hostname = *.wps.cn
 
 
 var chxm1023 = JSON.parse($response.body);
-const vip1 = '/users';
+const vip1 = '?t=1693243967998';
 
 if ($request.url.indexOf(vip1) != -1){
   chxm1023["privilege"] = [
