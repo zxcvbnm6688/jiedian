@@ -8,7 +8,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)) url script-response-body https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/3.js
+^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)) url script-response-body https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/4.js
 
 [mitm]
 hostname = *.wps.cn
@@ -19,7 +19,7 @@ hostname = *.wps.cn
 var chxm1023 = JSON.parse($response.body);
 const vip1 = '/list_purchase_info';
 const vip2 = '/overview';
-const vip3 = '?t=';
+const vip3 = 'account.wps.cn/api/users';
 const flkj = '/spaces';
 
 if ($request.url.indexOf(vip1) != -1){
