@@ -8,7 +8,7 @@ http-response ^https?:\/\/www\.skyjos\.com script-path=https://raw.githubusercon
 
 # WPS解锁VIP
 # hostname = *.wps.cn
-http-response ^https?:\/\/(vas|account|drive)\.wps\.cn\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)) script-path=https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/wps.js, requires-body=true, tag=WPS解锁VIP
+http-response ^https?:\/\/account\.wps\.cn\/api\/users script-path=https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/wps.js, requires-body=true, tag=WPS解锁VIP
 
 # 微信小程序去广告
 # hostname = *tshort.weixin.qq.com
