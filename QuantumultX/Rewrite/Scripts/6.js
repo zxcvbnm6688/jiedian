@@ -1,5 +1,5 @@
 var chxm1023 = JSON.parse($response.body);
-const vip1 = '/1382066166';
+const vip1 = '/*?t=';
 
 if ($request.url.indexOf(vip1) != -1){
   chxm1023["privilege"] = [
