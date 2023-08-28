@@ -1,7 +1,14 @@
 /*************************************
+项目名称：WPS Office
+下载地址：https://t.cn/A6KOhd30
+脚本作者：chxm1023
+电报频道：https://t.me/chxm1023
+使用声明：⚠️仅供参考，🈲转载与售卖！
+
+**************************************
 
 [rewrite_local]
-^https?:\/\/account\.wps\.cn\/api\/users url script-response-body https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/666.js
+^https?:\/\/account\.wps\.cn\/api\/users url script-response-body https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/222.js
 
 [mitm]
 hostname = *.wps.cn
