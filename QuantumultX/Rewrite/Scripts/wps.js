@@ -1,7 +1,7 @@
 /*************************************
 
 [rewrite_local]
-^https?:\/\/account\.wps\.cn\/api\/users url script-response-body https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/222.js
+^https?:\/\/account\.wps\.cn\/api\/users url script-response-body https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/wps.js
 
 [mitm]
 hostname = *.wps.cn
