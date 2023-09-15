@@ -10,10 +10,10 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/Reheji.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/Reheji.js
 ^https:\/\/app-measurement\.com\/config\/app\/1?(.*?)*$ url reject
-^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/.*\/?(.*?)*$ url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/sjyz.js
+^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/.*\/?(.*?)*$ url script-response-body https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/sjyz.js
 
 [mitm]
 hostname = api.revenuecat.com, app-measurement.com, firebaseremoteconfig.googleapis.com
