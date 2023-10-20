@@ -7,9 +7,9 @@
 
 [rewrite_local]
 
-^https://newdrugs.dxy.cn url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/yyzscook.js
+^https://newdrugs.dxy.cn url script-request-header https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/yyzscook.js
 
-https://newdrugs.dxy.cn/app/user/pro/stat? url script-response-body https://raw.githubusercontent.com/Yu9191/Script/main/yyzs2.js
+https://newdrugs.dxy.cn/app/user/pro/stat? url script-response-body https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/yyzs2.js
 
 [mitm]
 hostname = newdrugs.dxy.cn
