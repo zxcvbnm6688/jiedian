@@ -30,28 +30,6 @@ server=[2400:3200:baba::1]
 server=[2402:4e00::]
 
 [policy]
-static=JP, server-tag-regex=日|日本|大阪|东京|JP|🇯🇵, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/JP.png
-static=US, server-tag-regex=美|美国|圣何塞|US|us|🇺🇸, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/US.png
-static=SG, server-tag-regex=新|新加坡|狮城|SG|🇸🇬, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
-static=KR, server-tag-regex=韩|韩国|春川|首尔|KR|🇰🇷, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/KR.png
-static=HK, server-tag-regex=港|香港|HK|🇭🇰️, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/HK02.png
-static=TW, server-tag-regex=台|台湾|TW|🇹🇼, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW.png
-static=Apple Update, direct, reject, proxy, JP, US, SG, KR, HK, TW, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
-static=Netflix, SG, HK, JP, proxy, US, KR, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
-static=Telegram, SG, HK, JP, proxy, US, KR, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
-static=Spotify, US, proxy, JP, SG, KR, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
-static=Blizzard, proxy, JP, US, SG, KR, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Game.png
-static=Disney+, proxy, JP, US, SG, KR, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
-static=YouTube, proxy, JP, US, SG, KR, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
-static=Global, proxy, JP, US, SG, KR, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
-static=Speedtest, proxy, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Speedtest.png
-static=Iwara, US, proxy, JP, SG, KR, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
-static=PayPal, US, proxy, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
-static=Mainland, direct, proxy, JP, US, SG, KR, HK, TW, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
-static=Apple, direct, proxy, JP, US, SG, KR, HK, TW, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
-static=Bilibili, direct, TW, HK, proxy, SG, JP, US, KR, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
-static=TestFlight, direct, proxy, JP, US, SG, KR, HK, TW, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/TestFlight.png
-static=Microsoft, direct, proxy, JP, US, SG, KR, HK, TW, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
 
 [server_remote]
 
@@ -116,8 +94,8 @@ https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.re
 [server_local]
 
 [filter_local]
-geoip, cn, Mainland
-final, Mainland
+geoip, cn, direct
+final, direct
 
 [rewrite_local]
 
