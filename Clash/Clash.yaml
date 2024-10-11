@@ -95,7 +95,7 @@ rule-providers:
   direct:     {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Direct.yaml,                                 path: ./rules/direct.yaml     }
   direct1:    {<<: *a6, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml,               path: ./rules/direct1.yaml    }
   AD:         {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/AD.yaml,                                     path: ./rules/AD.yaml         }
-  AD1:        {<<: *a5, url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt,                                    path: ./rules/AD1.yaml        }
+  AD1:        {<<: *a5, url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml,                      path: ./rules/AD1.yaml        }
   iwara:      {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Iwara.yaml,                                  path: ./rules/iwara.yaml      }
   global:     {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Global.yaml,                                 path: ./rules/global.yaml     }
   speedtest:  {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Speedtest.yaml,                              path: ./rules/speedtest.yaml  }
