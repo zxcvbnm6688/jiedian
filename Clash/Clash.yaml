@@ -64,7 +64,7 @@ proxy-providers:
 proxies:
 
 proxy-groups:
-
+#分流分组
   - {name: PROXY, <<: *use}
   - {name: JP, <<: *use, filter: "(?i)日|日本|大阪|东京|jp|japan"}
   - {name: US, <<: *use, filter: "(?i)美|美国|圣何塞|us|unitedstates|united states"}
