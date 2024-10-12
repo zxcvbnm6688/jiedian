@@ -60,7 +60,7 @@ proxy-providers:
     # URL后面填写格式1[单一订阅]: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露]
     # URL后面填写格式2[多个订阅]：https://api.nexconvert.com/sub?target=clash&url=请手动填入你的订阅(多机场订阅用|分割即可)&emoji=true&list=true&new_name=true&udp=true
     path: ./proxy_providers/tmp.yaml
-    
+
 proxies:
 
 proxy-groups:
