@@ -89,6 +89,7 @@ proxy-groups:
   - {name: TestFlight, <<: *dr}
   - {name: Microsoft, <<: *dr}
   - {name: iQiYi, <<: *dr}
+  - {name: Final, <<: *dr}
 
 # 分流规则 
 rule-providers:
@@ -140,4 +141,4 @@ rules:
   - RULE-SET,global1,Global
   - GEOIP,LAN,Mainland
   - GEOIP,CN,Mainland
-  - MATCH,Mainland
+  - MATCH,Final
