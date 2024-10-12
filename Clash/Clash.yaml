@@ -44,14 +44,14 @@ dns:
 #========= 建立锚点 =========#
 
 # 策略组引用
-pr:   &pr {type: select, proxies: [PROXY,JP,US,SG,KR,HK,TW,DIRECT]}
-us:   &us {type: select, proxies: [US,PROXY,JP,SG,KR,HK,TW,DIRECT]}
-dr:   &dr {type: select, proxies: [DIRECT,TW,HK,PROXY,SG,JP,US,KR]}
-p:    &a1 {type: http,     interval: 86400,  health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800} }
+pr:   &pr  {type: select, proxies: [PROXY,JP,US,SG,KR,HK,TW,DIRECT]}
+us:   &us  {type: select, proxies: [US,PROXY,JP,SG,KR,HK,TW,DIRECT]}
+dr:   &dr  {type: select, proxies: [DIRECT,TW,HK,PROXY,SG,JP,US,KR]}
+p:    &a1  {type: http,     interval: 86400,  health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800} }
 use:  &use {type: select,   use: [Subscribe1,Subscribe2] }
-c:    &a6 {type: http,     behavior: classical, interval: 86400}
-d:    &a5 {type: http,     behavior: domain,    interval: 86400}
-i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
+c:    &a6  {type: http,     behavior: classical, interval: 86400}
+d:    &a5  {type: http,     behavior: domain,    interval: 86400}
+i:    &a7  {type: http,     behavior: ipcidr,    interval: 86400}
 
 proxy-providers:
   Subscribe1:
