@@ -48,18 +48,21 @@ pr:   &pr {type: select, proxies: [PROXY,JP,US,SG,KR,HK,TW,DIRECT]}
 us:   &us {type: select, proxies: [US,PROXY,JP,SG,KR,HK,TW,DIRECT]}
 dr:   &dr {type: select, proxies: [DIRECT,TW,HK,PROXY,SG,JP,US,KR]}
 p:    &a1 {type: http,     interval: 86400,  health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800} }
-use:  &use {type: select,   use: [Subscribe] }
+use:  &use {type: select,   use: [Subscribe1,Subscribe2] }
 c:    &a6 {type: http,     behavior: classical, interval: 86400}
 d:    &a5 {type: http,     behavior: domain,    interval: 86400}
 i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 
 proxy-providers:
-  Subscribe:
+  Subscribe1:
     <<: *a1
-    url: https://t.me/ddgksf2021.yaml
-    # URL后面填写格式1[单一订阅]: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露]
-    # URL后面填写格式2[多个订阅]：https://api.nexconvert.com/sub?target=clash&url=请手动填入你的订阅(多机场订阅用|分割即可)&emoji=true&list=true&new_name=true&udp=true
-    path: ./proxy_providers/tmp.yaml
+    url: 
+    path: ./proxy_providers/Subscribe1.yaml
+
+  Subscribe2:
+    <<: *a1
+    url: 
+    path: ./proxy_providers/Subscribe2.yaml
 
 proxies:
 
