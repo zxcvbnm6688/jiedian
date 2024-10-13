@@ -72,8 +72,8 @@ const t = async (u) => {
         });
         const w = v.body.trim() + ".txt";
         console.log(`恭喜你获得订阅:
-        ${w}`);
-        $notification.post(`${w}`);
+${w}`);
+        $notification.post("恭喜你获得订阅：", `${w}`);
     } catch (x) {
         console.log("ä½ é¿ä¸äºãè·åå¤±è´¥.");
     }
