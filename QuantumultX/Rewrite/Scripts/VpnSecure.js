@@ -1,9 +1,9 @@
 /*
 [rewrite_local]
-https:\/\/sl\.eric\.com url script-analyze-echo-response https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/VpnSecure.js
+https:\/\/sll\.eric\.vpn url script-analyze-echo-response https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/VpnSecure.js
 
 [MITM]
-hostname = sl.eric.com
+hostname = sll.eric.vpn
 */
 function a() {
     const b = "0123456789abcdef";
