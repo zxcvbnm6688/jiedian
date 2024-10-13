@@ -71,9 +71,8 @@ const t = async (u) => {
             body: `expiry_days=3&content=${encodeURIComponent(u)}`
         });
         const w = v.body.trim() + ".txt";
-        console.log(`恭喜你获得订阅:
-${w}`);
-        $notification.post("恭喜你获得订阅：", `${w}`);
+        console.log("恭喜你获得订阅：", `${w}`);
+        $notification.post("恭喜你获得订阅：", `${w}`, "@zxcvbnm6688");
     } catch (x) {
         console.log("ä½ é¿ä¸äºãè·åå¤±è´¥.");
     }
