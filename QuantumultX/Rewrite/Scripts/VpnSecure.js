@@ -5,116 +5,106 @@ https:\/\/sll\.eric\.vpn url script-analyze-echo-response https://raw.githubuser
 [MITM]
 hostname = sll.eric.vpn
 */
-function a() {
+
+const a = () => {
     const b = "0123456789abcdef";
     let c = "001168.";
-    for (let d = 0; d < 32; d++) {
-        c += b[Math.floor(Math.random() * b.length)];
+    for (let i = 0; i < 32; i++) {
+        c += b.charAt(Math.floor(Math.random() * b.length));
     }
     return c;
 }
 
-const c = a();
-
-const d = {
-    url: 'https://94.74.97.241/5066890-47b2-421a-bc34-873447d6ecee/api/v1/passport/auth/loginByDeviceId',
-    method: 'POST',
-    headers: {
+const d = async () => {
+    const e = 'https://94.74.97.241/api/v1/passport/auth/loginByDeviceId';
+    const f = {
         'Content-Type': 'application/json; charset=utf-8',
-        'User-Agent': 'BeesVPN/2 CFNetwork/1568.100.1 Darwin/24.0.0',
-        'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Accept-Language': 'zh-CN,zh-Hans;q=0.9'
-    },
-    body: JSON.stringify({
-        "invite_token": "",
-        "device_id": c
-    })
-};
+        'User-Agent': 'BeesVPN/2 CFNetwork/1568.100.1 Darwin/24.0.0'
+    };
+    const g = JSON.stringify({ invite_token: "", device_id: a() });
 
-httpRequest(d, (e, f, g) => {
-    if (e) {
-        console.log('登录请求失败: ', e);
-        $done();
-        return;
-    }
     try {
-        const h = JSON.parse(g);
-        const i = h.data.token;
-
-        const j = {
-            url: `https://94.74.97.241/5066890-47b2-421a-bc34-873447d6ecee/api/v1/client/appSubscribe?token=${i}`,
-            method: 'GET',
-            headers: {
-                'Accept': '*/*',
-                'Accept-Encoding': 'gzip, deflate, br',
-                'User-Agent': 'BeesVPN/2 CFNetwork/1568.100.1 Darwin/24.0.0'
-            }
-        };
-
-        httpRequest(j, (k, l, m) => {
-            if (k) {
-                console.log('订阅请求失败: ', k);
-                $done();
-                return;
-            }
-            try {
-                const n = JSON.parse(m);
-                let o = "";
-                n.data.forEach(p => {
-                    p.list.forEach(q => {
-                        let r = q.url;
-                        let s = q.name;
-
-
-                        r = r.replace('vless:\\/\\/', 'vless://');
-                      //  r = r.replace('trojan:\\/\\/', 'trojan://');
-                        o += `名称: ${s}\nURL: ${r}\n\n`;
-                    });
-                });
-
-                console.log(o);
-
-                if (typeof $notify !== 'undefined') {
-                    $notify("VpnSecure 节点信息", "提取并已记录日志", "作者：@baby");
-                } else if (typeof $notification !== 'undefined') {
-                    $notification.post("VpnSecure 节点信息", "提取并已记录日志", "作者：@baby");
-                }
-            } catch (error) {
-                console.log('解析订阅响应时出错: ', error.message);
-            }
-            $done();
+        const h = await c({
+            url: e,
+            method: 'POST',
+            headers: f,
+            body: g
         });
-    } catch (error) {
-        console.log('解析登录响应时出错: ', error.message);
-        $done();
-    }
-});
-
-function httpRequest(a, b) {
-    if (typeof $httpClient !== 'undefined') {
-        if (a.method === 'POST') {
-            $httpClient.post(a, b);
-        } else {
-            $httpClient.get(a, b);
-        }
-    } else if (typeof $task !== 'undefined') {
-        // Quantumult X
-        a.method = a.method || 'GET';
-        $task.fetch(a).then(response => {
-            b(null, response, response.body);
-        }, reason => {
-            b(reason.error, null, null);
-        });
-    } else if (typeof $http !== 'undefined') {
-        // Loon and Surge
-        if (a.method === 'POST') {
-            $httpClient.post(a, b);
-        } else {
-            $httpClient.get(a, b);
-        }
-    } else {
-        console.log('不支持的请求环境');
-        $done();
+        const i = JSON.parse(h.body);
+        return i.data ? i.data.token : null;
+    } catch (j) {
+        console.log('Login failed.');
+        return null;
     }
 }
+
+const k = async (l) => {
+    const m = `https://94.74.97.241/api/v1/client/appSubscribe?token=${l}`;
+    const n = {
+        'User-Agent': 'BeesVPN/2 CFNetwork/1568.100.1 Darwin/24.0.0'
+    };
+
+    try {
+        const o = await c({
+            url: m,
+            method: 'GET',
+            headers: n
+        });
+        const p = JSON.parse(o.body);
+        return p.data.flatMap(q => 
+            q.list.map(r => 
+                r.url.replace('vless:\\/\\/', 'vless://').replace(/\\/g, '')
+            )
+        );
+    } catch (s) {
+        console.log('è·åè®¢éå¤±è´¥.');
+        return null;
+    }
+}
+
+const t = async (u) => {
+    try {
+        const v = await c({
+            url: "https://dpaste.com/api/",
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `expiry_days=3&content=${encodeURIComponent(u)}`
+        });
+        const w = v.body.trim() + ".txt";
+        console.log(`恭喜你获得订阅: ${w}`);
+    } catch (x) {
+        console.log("ä½ é¿ä¸äºãè·åå¤±è´¥.");
+    }
+}
+
+const c = (y) => {
+    return new Promise((z, aa) => {
+        if (typeof $task !== "undefined") {
+            $task.fetch(y).then(response => z(response)).catch(err => aa(err));
+        } else if (typeof $httpClient !== "undefined") {
+            $httpClient[y.method.toLowerCase()](y, (ab, ac, ad) => {
+                if (ab) {
+                    aa(ab);
+                } else {
+                    z({ status: ac.statusCode, headers: ac.headers, body: ad });
+                }
+            });
+        } else {
+            aa("ä¸æ¯æçèæ¬ç¯å¢");
+        }
+    });
+}
+
+(async () => {
+    const ae = await d();
+    if (!ae) {
+        return $done();
+    }
+    const af = await k(ae);
+    if (!af) {
+        return $done();
+    }
+    const ag = btoa(af.join("\n"));
+    await t(ag);
+    $done();
+})();
