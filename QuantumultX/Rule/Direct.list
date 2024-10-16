@@ -1,4 +1,3 @@
 HOST,ad.12306.cn,Direct
 HOST,sdkapp.uve.weibo.com,Direct
 HOST-SUFFIX,gitlab.com,Direct
-USER-AGENT,hearthstone*,Direct
