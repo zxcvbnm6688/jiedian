@@ -1,4 +1,4 @@
-**************************************
+/*************************************
 
 [rewrite_local]
 https:\/\/sll\.eric\.vpn url script-analyze-echo-response https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/QuantumultX/Rewrite/Scripts/VpnSecure.js
