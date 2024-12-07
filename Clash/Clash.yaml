@@ -96,27 +96,27 @@ proxy-groups:
 
 # 分流规则 
 rule-providers:
-  direct:     {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Direct.yaml,                                 path: ./rules/direct.yaml     }
-  direct1:    {<<: *a6, url: https://rule.kelee.one/Clash/Direct.yaml,               path: ./rules/direct1.yaml    }
-  AD:         {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/AD.yaml,                                     path: ./rules/AD.yaml         }
-  AD1:        {<<: *a5, url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml,                      path: ./rules/AD1.yaml        }
-  iwara:      {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Iwara.yaml,                                  path: ./rules/iwara.yaml      }
-  global:     {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Global.yaml,                                 path: ./rules/global.yaml     }
-  speedtest:  {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Speedtest.yaml,                              path: ./rules/speedtest.yaml  }
-  openai:     {<<: *a6, url: https://rule.kelee.one/Clash/OpenAI.yaml,               path: ./rules/openai.yaml     }
-  netflix:    {<<: *a6, url: https://rule.kelee.one/Clash/Netflix.yaml,   path: ./rules/netflix.yaml    }
-  telegram:   {<<: *a6, url: https://rule.kelee.one/Clash/Telegram.yaml,           path: ./rules/telegram.yaml   }
-  disney:     {<<: *a6, url: https://rule.kelee.one/Clash/Disney.yaml,               path: ./rules/disney.yaml     }
-  spotify:    {<<: *a6, url: https://rule.kelee.one/Clash/Spotify.yaml,             path: ./rules/spotify.yaml    }
-  youtube:    {<<: *a6, url: https://rule.kelee.one/Clash/YouTube.yaml,             path: ./rules/youtube.yaml    }
-  paypal:     {<<: *a6, url: https://rule.kelee.one/Clash/PayPal.yaml,               path: ./rules/paypal.yaml     }
-  microsoft:  {<<: *a6, url: https://rule.kelee.one/Clash/Microsoft.yaml,         path: ./rules/microsoft.yaml  }
-  testflight: {<<: *a6, url: https://rule.kelee.one/Clash/TestFlight.yaml,       path: ./rules/testflight.yaml }
-  apple:      {<<: *a6, url: https://rule.kelee.one/Clash/Apple.yaml,       path: ./rules/apple.yaml      }
-  bilibili:   {<<: *a6, url: https://rule.kelee.one/Clash/BiliBiliIntl.yaml,   path: ./rules/bilibili.yaml   }
-  iqiyi:      {<<: *a6, url: https://rule.kelee.one/Clash/iQIYI.yaml,                 path: ./rules/iqiyi.yaml      }
-  china:      {<<: *a6, url: https://rule.kelee.one/Clash/ChinaMax.yaml, path: ./rules/china.yaml      }
-  global1:    {<<: *a6, url: https://rule.kelee.one/Clash/Proxy.yaml,       path: ./rules/global1.yaml    }
+  direct:     {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Direct.yaml,            path: ./rules/direct.yaml     }
+  direct1:    {<<: *a6, url: https://rule.kelee.one/Clash/Direct.yaml,                                                     path: ./rules/direct1.yaml    }
+  AD:         {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/AD.yaml,                path: ./rules/AD.yaml         }
+  AD1:        {<<: *a5, url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml, path: ./rules/AD1.yaml        }
+  iwara:      {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Iwara.yaml,             path: ./rules/iwara.yaml      }
+  global:     {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Global.yaml,            path: ./rules/global.yaml     }
+  speedtest:  {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Speedtest.yaml,         path: ./rules/speedtest.yaml  }
+  openai:     {<<: *a6, url: https://rule.kelee.one/Clash/OpenAI.yaml,                                                     path: ./rules/openai.yaml     }
+  netflix:    {<<: *a6, url: https://rule.kelee.one/Clash/Netflix.yaml,                                                    path: ./rules/netflix.yaml    }
+  telegram:   {<<: *a6, url: https://rule.kelee.one/Clash/Telegram.yaml,                                                   path: ./rules/telegram.yaml   }
+  disney:     {<<: *a6, url: https://rule.kelee.one/Clash/Disney.yaml,                                                     path: ./rules/disney.yaml     }
+  spotify:    {<<: *a6, url: https://rule.kelee.one/Clash/Spotify.yaml,                                                    path: ./rules/spotify.yaml    }
+  youtube:    {<<: *a6, url: https://rule.kelee.one/Clash/YouTube.yaml,                                                    path: ./rules/youtube.yaml    }
+  paypal:     {<<: *a6, url: https://rule.kelee.one/Clash/PayPal.yaml,                                                     path: ./rules/paypal.yaml     }
+  microsoft:  {<<: *a6, url: https://rule.kelee.one/Clash/Microsoft.yaml,                                                  path: ./rules/microsoft.yaml  }
+  testflight: {<<: *a6, url: https://rule.kelee.one/Clash/TestFlight.yaml,                                                 path: ./rules/testflight.yaml }
+  apple:      {<<: *a6, url: https://rule.kelee.one/Clash/Apple.yaml,                                                      path: ./rules/apple.yaml      }
+  bilibili:   {<<: *a6, url: https://rule.kelee.one/Clash/BiliBiliIntl.yaml,                                               path: ./rules/bilibili.yaml   }
+  iqiyi:      {<<: *a6, url: https://rule.kelee.one/Clash/iQIYI.yaml,                                                      path: ./rules/iqiyi.yaml      }
+  china:      {<<: *a6, url: https://rule.kelee.one/Clash/ChinaMax.yaml,                                                   path: ./rules/china.yaml      }
+  global1:    {<<: *a6, url: https://rule.kelee.one/Clash/Proxy.yaml,                                                      path: ./rules/global1.yaml    }
 
 
 # 分流Policy 
