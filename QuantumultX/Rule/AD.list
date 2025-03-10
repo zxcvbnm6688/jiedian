@@ -3,5 +3,5 @@ HOST,ocsp.apple.com,AD
 HOST,amdc.m.taobao.com,AD
 HOST,ntb.lanjie100.com,AD
 HOST,gather.colorfulclouds.net,AD
-host, grpc.biliapi.net,AD
+HOST,grpc.biliapi.net,AD
 IP-CIDR,203.107.1.1/24,AD
