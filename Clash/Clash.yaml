@@ -77,15 +77,15 @@ proxy-groups:
   - {name: TW, <<: *use, filter: "(?i)(台|台湾|TW)"}
 
   - {name: AppleUpdate, type: select, proxies: [DIRECT,REJECT,PROXY,JP,US,SG,KR,HK,TW]}
-  - {name: Netflix, type: select, proxies: [SG,HK,JP,PROXY,US,KR,TW,DIRECT]}
-  - {name: Telegram, type: select, proxies: [SG,HK,JP,PROXY,US,KR,TW,DIRECT]}
-  - {name: Spotify, <<: *us}
+  - {name: Netflix, <<: *pr}
+  - {name: Telegram, <<: *pr}
+  - {name: Spotify, <<: *pr}
   - {name: Disney, <<: *pr}
   - {name: YouTube, <<: *pr}
   - {name: Global, <<: *pr}
   - {name: Speedtest, type: select, proxies: [PROXY,DIRECT]}
-  - {name: Iwara, <<: *us}
-  - {name: PayPal, <<: *us}
+  - {name: Iwara, <<: *pr}
+  - {name: PayPal, <<: *pr}
   - {name: Mainland, <<: *dr}
   - {name: Apple, <<: *dr}
   - {name: Bilibili, <<: *dr}
