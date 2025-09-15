@@ -104,6 +104,8 @@ rule-providers:
   iwara:      {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Iwara.yaml,     path: ./rules/iwara.yaml      }
   global:     {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Global.yaml,    path: ./rules/global.yaml     }
   speedtest:  {<<: *a6, url: https://raw.githubusercontent.com/zxcvbnm6688/jiedian/main/Clash/Rule/Speedtest.yaml, path: ./rules/speedtest.yaml  }
+  Google:     {<<: *a6, url: https://rule.kelee.one/Clash/Google.yaml,                                             path: ./rules/Google.yaml     }
+  GoogleFCM:  {<<: *a6, url: https://rule.kelee.one/Clash/GoogleFCM.yaml,                                          path: ./rules/GoogleFCM.yaml  }
   openai:     {<<: *a6, url: https://rule.kelee.one/Clash/OpenAI.yaml,                                             path: ./rules/openai.yaml     }
   netflix:    {<<: *a6, url: https://rule.kelee.one/Clash/Netflix.yaml,                                            path: ./rules/netflix.yaml    }
   telegram:   {<<: *a6, url: https://rule.kelee.one/Clash/Telegram.yaml,                                           path: ./rules/telegram.yaml   }
@@ -129,6 +131,8 @@ rules:
   - RULE-SET,iwara,Iwara
   - RULE-SET,global,Global
   - RULE-SET,speedtest,Speedtest
+  - RULE-SET,Google,Global
+  - RULE-SET,GoogleFCM,Global
   - RULE-SET,openai,Iwara
   - RULE-SET,netflix,Netflix
   - RULE-SET,telegram,Telegram
