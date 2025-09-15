@@ -46,7 +46,7 @@ dns:
 # 策略组引用
 pr:   &pr  {type: select,   proxies: [PROXY,JP,US,SG,KR,HK,TW,DIRECT]}
 us:   &us  {type: select,   proxies: [US,PROXY,JP,SG,KR,HK,TW,DIRECT]}
-dr:   &dr  {type: select,   proxies: [FINAL,DIRECT,TW,HK,PROXY,SG,JP,US,KR]}
+dr:   &dr  {type: select,   proxies: [DIRECT,TW,HK,PROXY,SG,JP,US,KR]}
 p:    &a1  {type: http,     interval: 86400,  health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800}}
 use:  &use {type: select,   use: [Subscribe1,Subscribe2]}
 c:    &a6  {type: http,     behavior: classical, interval: 86400}
@@ -69,7 +69,6 @@ proxies:
 proxy-groups:
 #分流分组
   - {name: PROXY, <<: *use}
-  - {name: FINAL, type: select, proxies: [DIRECT], use: [Subscribe1,Subscribe2]}
   - {name: JP, <<: *use, filter: "(?i)日|日本|大阪|东京|jp|japan"}
   - {name: US, <<: *use, filter: "(?i)美|美国|圣何塞|us|unitedstates|united states"}
   - {name: SG, <<: *use, filter: "(?i)(新|新加坡|狮城|sg|singapore)"}
