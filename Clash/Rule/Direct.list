@@ -1,3 +1,7 @@
 DOMAIN,sdkapp.uve.weibo.com
 DOMAIN-SUFFIX,gitlab.com
 DOMAIN-SUFFIX,cloudflare.com
+IP-CIDR,28.0.0.1/8
+IP-CIDR,198.18.0.1/16
+IP-CIDR,198.18.0.0/15
+IP-CIDR6,fc00::/18
