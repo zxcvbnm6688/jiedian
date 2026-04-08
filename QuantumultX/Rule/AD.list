@@ -5,4 +5,8 @@ HOST,ntb.lanjie100.com,AD
 HOST,gather.colorfulclouds.net,AD
 HOST,grpc.biliapi.net,AD
 HOST,msmp.abchina.com.cn,AD
+HOST,api.biliapi.com,AD
+HOST,app.biliapi.com,AD
+HOST,api.biliapi.net,AD
+HOST,app.biliapi.net,AD
 IP-CIDR,203.107.1.1/24,AD
