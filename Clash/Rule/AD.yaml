@@ -5,3 +5,7 @@ payload:
   - DOMAIN,ntb.lanjie100.com
   - DOMAIN,gather.colorfulclouds.net
   - DOMAIN,msmp.abchina.com.cn
+  - DOMAIN,api.biliapi.com
+  - DOMAIN,app.biliapi.com
+  - DOMAIN,api.biliapi.net
+  - DOMAIN,app.biliapi.net
