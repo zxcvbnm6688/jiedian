@@ -9,4 +9,7 @@ HOST,api.biliapi.com,AD
 HOST,app.biliapi.com,AD
 HOST,api.biliapi.net,AD
 HOST,app.biliapi.net,AD
+HOST,browser.vivo.com.cn,AD
+HOST,browserstatic.vivo.com.cn,AD
+HOST,browserconf.vivo.com.cn,AD
 IP-CIDR,203.107.1.1/24,AD
